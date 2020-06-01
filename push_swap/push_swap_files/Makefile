@@ -2,7 +2,7 @@ NAME = push_swap
 
 FLAGS = -Wall -Wextra -Werror  -I
 
-CC = clang -o
+CC = gcc -o
 
 SRC= ./src/*.c
 

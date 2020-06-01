@@ -42,12 +42,12 @@ int		error_checking(char **log)
 	{
 		if (ft_strlen(log[j]) == 10)
 		{
-			if (ft_atoi(log[j]) < 1000000000 || ft_atoi(log[j]) > INT_MAX)
+			if (ft_atoi(log[j]) < 1000000000)
 				return (1);
 		}
 		else if (ft_strlen(log[j]) == 11)
 		{
-			if (ft_atoi(log[j]) > -1000000000 || ft_atoi(log[j]) < -INT_MIN)
+			if (ft_atoi(log[j]) > -1000000000)
 				return (1);
 		}
 		else if (ft_strlen(log[j]) > 11 || !(ft_isdigit(log[j][0])))
